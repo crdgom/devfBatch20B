@@ -1,0 +1,23 @@
+Definición de Javascript:
+- Lenguaje multiparadigma, principalmente es un lenguaje orientado a objetos basado en prototipos.
+- Es un lenguaje de alto nivel, interpretado, débilmente tipado, dinámico, que trabaja en un solo hilo del procesador de forma concurrente.
+
+======================================================================================================================================================
+======================================================================================================================================================
+
+Node JS.
+
+NO ES:
+
+- Un lenguaje de programación.
+- Javascript
+- Un Lenguaje de servidor.
+- Orientado al BackEnd.
+
+
+SI ES:
+- Un entorno de ejecución de Javascript fuera del navegador.
+* Esta formado por tecnologías como:
+-- Interprete/Javascript engine V8 de Google.
+-- Librería de código asíncrono "LIBUV".
+-- Más código en C y Javascript.
