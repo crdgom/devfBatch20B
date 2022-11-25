@@ -1,23 +1,106 @@
-Definición de Javascript:
-- Lenguaje multiparadigma, principalmente es un lenguaje orientado a objetos basado en prototipos.
-- Es un lenguaje de alto nivel, interpretado, débilmente tipado, dinámico, que trabaja en un solo hilo del procesador de forma concurrente.
+Javascript, DEFINICIÓN:
 
-======================================================================================================================================================
-======================================================================================================================================================
+- Un lenguaje multiparadigma, principalmente orientado a objetos y basado en prototipos. 
+- De alto nivel. Tipado dinámico. Que trabaja en un solo hilo del procesador de forma concurrente.
 
-Node JS.
+================================================================================================================
+TIPADO DINáMICO vs ESTáTICO
+
+- var tres = 2 -> no específica el tipo de dato, tipado débil / dinámico
+
+- int X = 10; -> específica el tipo de dato, tipado fuerte/estático
+- float y = 3.6789
+
+================================================================================================================
+Node js.
 
 NO ES:
-
-- Un lenguaje de programación.
-- Javascript
-- Un Lenguaje de servidor.
-- Orientado al BackEnd.
-
+  - Un lenguaje de programación.
+  - Javascript
+  - Un lenguaje de servidor
+  - Orientado al backend.
+  - interprete
+  - no es un framework
+  - no es una librería
 
 SI ES:
-- Un entorno de ejecución de Javascript fuera del navegador.
+  - Un entorno de ejecución de Javascript fuera del navegador.
+
 * Esta formado por tecnologías como:
--- Interprete/Javascript engine V8 de Google.
--- Librería de código asíncrono "LIBUV".
--- Más código en C y Javascript.
+
+  - Interprete(javascript engine) v8 de Google Chrome
+  - Librería de código asíncrono: "LIBUV"
+  - Más código en c, c++ y en el propio javascript
+
+================================================================================================================
+INTERPRETACIóN vs COMPILACIóN
+
+- javascript ENGINE: Entorno en donde se interpreta el lenguaje
+
+- INTERPRETACIóN, se hace en tiempo real (browser ó node junto con su (javascript engine/interprete))
+
+* Instrucciones de js(lenguaje de alto nivel), pasan a:
+
+* Assembler -> traducir las instrucciones de alto nivel y pasarlas a direcciones en memoria (bits, bytes), pasan a:
+
+* machine code(lenguaje maquina) = 0101010 => pulsos eléctricos/Binario, pasan a ser administrados por el procesador.
+
+
+- COMPILACIóN, se hace la traducción desde alto nivel a machine code, pero se crea un archivo .exe con los "binarios"
+
+===============================================================================================================
+COMPONENTES FUNDAMENTALES DE UN SISTEMA OPERATIVO (ALGUNOS):
+
+* KERNEL: Es un programa de computadora en el núcleo
+del sistema operativo de una computadora y generalmente tiene
+control completo sobre todo en el sistema.
+Es la parte del código del sistema operativo que siempre reside en la memoria
+y facilita las interacciones entre los componentes de hardware y software.
+
+* INTERFAZ GRÁFICA DE USUARIO(GUI), puede ser de dos tipos:
+
+  - CLI(COMMAND LINE INTERFACE), Interfaz de linea de comandos. 
+  - ENTORNO DE ESCRITORIO(DESKTOP ENVIRONMENT)/INTERFAZ GRÁFICA BASADA EN VENTANAS.
+
+* SISTEMA DE ARCHIVOS: Software de tipo AST, que nos permite navegar por las carpetas y archivos de
+nuestra computadora por medio de rutas absolutas ó relativas.
+
+===============================================================================================================
+DEFINICIóN: 
+
+* AST(ABSTRACT SYNTAX TREE):
+
+Es una representación de árbol de la estructura sintáctica abstracta del texto
+(a menudo código fuente) escrito en un lenguaje formal. Cada nodo del árbol
+denota una construcción que ocurre en el texto.
+
+===============================================================================================================
+PROCESADOR:
+
+Componente de Hardware que se dedica a hacer cómputos/cálculos y a recibir y transmitir instrucciones en código binario/patrones de pulsos eléctricos.
+
+2 componentes fundamentales:
+
+* Core/núcleo(hardware):
+
+Es un procesador, dentro del procesador(sub procesadores). Se encarga de administrar procesos(programas)
+- Cada núcleo, va administrar un programa y si tienes más de uno, los programas se van a ejecutar en paralelo/al mismo tiempo.
+
+* Thread/hilo/procesadores lógicos(software):
+De forma estándar, suelen ser 2 hilos por núcleo.
+Encargados de administrar las tareas/instrucciones del proceso.
+
+Las tareas se pueden administrar y ejecutar de forma:
+
+- SECUENCIAL/ASÍNCRONO. Una instrucción a la vez,
+
+- PARALELA. Una serie de instrucciones que se reparten en más de un hilo para ejecutar varias tareas al mismo tiempo y acabar más rápido
+
+- CONCURRENTE/ASÍNCRONO. Una serie de instrucciones que simulan paralelismo en un solo hilo/menos recursos, ejecutándose de forma estratégica dándole prioridad a algunas instrucciones con 
+respecto a otras. Esta prioridad, la suele establecer el lenguaje ó el programador. En javascript, lo hace el event loop que puede vivir en el
+browser ó en node y depende de cómo el programador domine el flujo, para no bloquear el hilo.
+
+===============================================================================================================
+Un cliente/consumidor, es un software que hace peticiones a un servidor para consumir los datos
+
+Un servidor, es un software que despacha peticiones de un cliente.
